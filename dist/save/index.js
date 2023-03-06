@@ -53375,7 +53375,7 @@ var ArchiveToolType;
     ArchiveToolType["BSD"] = "bsd";
 })(ArchiveToolType = exports.ArchiveToolType || (exports.ArchiveToolType = {}));
 // The default number of retry attempts.
-exports.DefaultRetryAttempts = 2;
+exports.DefaultRetryAttempts = 10;
 // The default delay in milliseconds between retry attempts.
 exports.DefaultRetryDelay = 5000;
 // Socket timeout in milliseconds during download.  If no traffic is received
