@@ -1633,7 +1633,7 @@ var ArchiveToolType;
     ArchiveToolType["BSD"] = "bsd";
 })(ArchiveToolType || (exports.ArchiveToolType = ArchiveToolType = {}));
 // The default number of retry attempts.
-exports.DefaultRetryAttempts = 2;
+exports.DefaultRetryAttempts = 10;
 // The default delay in milliseconds between retry attempts.
 exports.DefaultRetryDelay = 5000;
 // Socket timeout in milliseconds during download.  If no traffic is received
@@ -30492,7 +30492,7 @@ const BLOCK_BLOB_MAX_BLOCKS = 50000;
 const DEFAULT_BLOCK_BUFFER_SIZE_BYTES = 8 * 1024 * 1024; // 8MB
 const DEFAULT_BLOB_DOWNLOAD_BLOCK_BYTES = 4 * 1024 * 1024; // 4MB
 const DEFAULT_MAX_DOWNLOAD_RETRY_REQUESTS = 5;
-const REQUEST_TIMEOUT = 100 * 1000; // In ms
+const REQUEST_TIMEOUT = 3600 * 1000; // In ms
 /**
  * The OAuth scope to use with Azure Storage.
  */
